@@ -8,12 +8,13 @@ import org.junit.rules.ExpectedException;
 
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 
 public class SoldierTests {
 
-    // OLD SCHOOL
+    // OLD SCHOOL. Not recommended
     @Test
     public void givenASoldierWithoutSwordWhenHeAttacksAnExceptionIsThrownTryCatch() {
 
@@ -34,6 +35,8 @@ public class SoldierTests {
         // ASSERT: The outcomes
         assertNotNull(caughtException);
         assertThat(caughtException, new IsInstanceOf(RuntimeException.class));
+
+        // TIP: Prefer literals in asserts
         assertThat(caughtException.getMessage(), new IsEqual("This soldier can not attack"));
 
         // ANNIHILATE: Clean up
@@ -81,4 +84,17 @@ public class SoldierTests {
                 .isInstanceOf(RuntimeException.class)
                 .hasMessage("This soldier can not attack");
     }
+
+    /* TIP: JUnit5
+    @Test
+    public void givenASoldierWithoutSwordWhenHeAttacksAnExceptionIsThrownJUnit5() {
+
+        final Soldier soldierWithoutSword = new Soldier.Builder(false, 25).damage(10)
+                .defense(12)
+                .build();
+
+        RuntimeException runtimeExc = assertThrows(RuntimeException.class, () -> soldierWithoutSword.attack());
+        assertEquals("This soldier can not attack", runtimeExc.getMessage());
+    }
+    */
 }
