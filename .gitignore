@@ -51,6 +51,9 @@ local.properties
 .scala_dependencies
 .worksheet
 
+# IntelliJ
+*.iml
+
 ### Eclipse Patch ###
 # Eclipse Core
 .project
