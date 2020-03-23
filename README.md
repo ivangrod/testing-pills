@@ -5,4 +5,4 @@ This repository contains practices, tips and articles summarized about some Test
 Table of contents
 =================
 
-* [Different ways for testing exceptions](src/test/java/org/ivangrod/testingpills/exception/SoldierTests.java)
+* [Different ways for testing exceptions](testing_exceptions/src/test/java/org/ivangrod/testingpills/exception/SoldierTests.java)
