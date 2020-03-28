@@ -1,7 +1,5 @@
 package com.ivangrod.wycash;
 
-import java.util.Objects;
-
 public class Dollar extends Money {
 
     public Dollar(int amount) {
@@ -10,11 +8,5 @@ public class Dollar extends Money {
 
     public Dollar times(int multiplier) {
         return new Dollar(amount * multiplier);
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        Dollar dollar = (Dollar) object;
-        return amount == dollar.amount;
     }
 }
