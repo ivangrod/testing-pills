@@ -2,11 +2,12 @@ package com.ivangrod.wycash;
 
 public class Dollar {
 
-    int amount = 5 * 2;
+    int amount;
 
     public Dollar(int amount) {
     }
 
     public void times(int multiplier) {
+        amount = 5 * multiplier;
     }
 }
