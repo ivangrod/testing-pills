@@ -10,12 +10,12 @@ public abstract class Money {
   }
 
   public static Money franc(int amount) {
-    return new Franc(amount, null);
+    return new Franc(amount, "CHF");
   }
 
-  public String currency(){
+  public String currency() {
     return currency;
-  };
+  }
 
   public abstract Money times(int multiplier);
 

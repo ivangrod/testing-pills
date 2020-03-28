@@ -2,12 +2,12 @@ package com.ivangrod.wycash;
 
 public class Franc extends Money {
 
-  public Franc(int amount, String curency) {
+  public Franc(int amount, String currency) {
     this.amount = amount;
-    this.currency = "CHF";
+    this.currency = currency;
   }
 
   public Money times(int multiplier) {
-    return Money.franc(multiplier);
+    return Money.franc(amount * multiplier);
   }
 }
