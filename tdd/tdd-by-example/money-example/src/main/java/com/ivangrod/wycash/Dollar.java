@@ -2,9 +2,7 @@ package com.ivangrod.wycash;
 
 import java.util.Objects;
 
-public class Dollar {
-
-    private int amount;
+public class Dollar extends Money {
 
     public Dollar(int amount) {
         this.amount = amount;
