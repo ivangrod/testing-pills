@@ -3,6 +3,7 @@ package com.ivangrod.wycash;
 public abstract class Money {
 
   protected int amount;
+  protected String currency;
 
   public static Money dollar(int amount) {
     return new Dollar(amount);
@@ -12,7 +13,9 @@ public abstract class Money {
     return new Franc(amount);
   }
 
-  public abstract String currency();
+  public String currency(){
+    return currency;
+  };
 
   public abstract Money times(int multiplier);
 
