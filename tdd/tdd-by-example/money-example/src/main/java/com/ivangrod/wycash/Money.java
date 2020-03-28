@@ -12,6 +12,8 @@ public abstract class Money {
     return new Franc(amount);
   }
 
+  public abstract String currency();
+
   public abstract Money times(int multiplier);
 
   @Override
