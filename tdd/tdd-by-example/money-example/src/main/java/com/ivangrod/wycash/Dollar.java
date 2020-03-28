@@ -2,7 +2,7 @@ package com.ivangrod.wycash;
 
 public class Dollar {
 
-    int amount;
+    int amount = 10;
 
     public Dollar(int amount) {
     }
