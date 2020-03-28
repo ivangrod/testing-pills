@@ -1,12 +1,14 @@
 package com.ivangrod.wycash;
 
-public class Money {
+public abstract class Money {
 
     protected int amount;
 
     public static Dollar dollar(int amount) {
         return new Dollar(amount);
     }
+
+    public abstract Money times(int multiplier);
 
     @Override
     public boolean equals(Object object) {
