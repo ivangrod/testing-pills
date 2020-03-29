@@ -1,6 +1,6 @@
 package com.ivangrod.wycash;
 
-public abstract class Money {
+public class Money {
 
   protected int amount;
   protected String currency;
@@ -22,7 +22,9 @@ public abstract class Money {
     return currency;
   }
 
-  public abstract Money times(int multiplier);
+  public Money times(int multiplier){
+    return null;
+  };
 
   @Override
   public boolean equals(Object object) {
