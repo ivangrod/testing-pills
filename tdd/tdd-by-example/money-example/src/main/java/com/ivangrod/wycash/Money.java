@@ -22,7 +22,7 @@ public class Money {
     return currency;
   }
 
-  public Money times(int multiplier){
+  public Money times(int multiplier) {
     return null;
   };
 
@@ -30,5 +30,10 @@ public class Money {
   public boolean equals(Object object) {
     Money money = (Money) object;
     return amount == money.amount && getClass().equals(money.getClass());
+  }
+
+  @Override
+  public String toString() {
+    return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
   }
 }
