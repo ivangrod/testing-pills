@@ -13,6 +13,9 @@ public class Year {
     return isDivisibleBy(4) || isDivisibleBy(400);
   }
 
+  /**
+   * Explanatory method
+   */
   private boolean isDivisibleBy(int divisor) {
     return year % divisor == 0;
   }
