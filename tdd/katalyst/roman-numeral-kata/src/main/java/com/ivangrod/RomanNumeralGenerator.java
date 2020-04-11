@@ -23,6 +23,25 @@ public class RomanNumeralGenerator {
       return convert_1_to_4_roman_numeral(arabicNumber);
     }
 
+    if (arabicNumber == 6) {
+      return oneLiteralNumeral.get(5).concat(oneLiteralNumeral.get(1));
+    }
+
+    if (arabicNumber == 7) {
+      return oneLiteralNumeral
+          .get(5)
+          .concat(oneLiteralNumeral.get(1).concat(oneLiteralNumeral.get(1)));
+    }
+
+    if (arabicNumber == 8) {
+      return oneLiteralNumeral
+          .get(5)
+          .concat(
+              oneLiteralNumeral
+                  .get(1)
+                  .concat(oneLiteralNumeral.get(1).concat(oneLiteralNumeral.get(1))));
+    }
+
     return oneLiteralNumeral.get(arabicNumber);
   }
 

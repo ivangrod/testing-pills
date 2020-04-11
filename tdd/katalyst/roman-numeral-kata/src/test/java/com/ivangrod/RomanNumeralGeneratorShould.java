@@ -33,6 +33,21 @@ public class RomanNumeralGeneratorShould {
   }
 
   @Test
+  public void convert_6_arabic_number_to_VI_roman_numeral() {
+    assertThat(romanNumeral(6), equalTo("VI"));
+  }
+
+  @Test
+  public void convert_7_arabic_number_to_VII_roman_numeral() {
+    assertThat(romanNumeral(7), equalTo("VII"));
+  }
+
+  @Test
+  public void convert_8_arabic_number_to_VIII_roman_numeral() {
+    assertThat(romanNumeral(8), equalTo("VIII"));
+  }
+
+  @Test
   public void convert_10_arabic_number_to_X_roman_numeral() {
     assertThat(romanNumeral(10), equalTo("X"));
   }
