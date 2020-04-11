@@ -48,6 +48,11 @@ public class RomanNumeralGeneratorShould {
   }
 
   @Test
+  public void convert_9_arabic_number_to_VIIII_roman_numeral() {
+    assertThat(romanNumeral(9), equalTo("VIIII"));
+  }
+
+  @Test
   public void convert_10_arabic_number_to_X_roman_numeral() {
     assertThat(romanNumeral(10), equalTo("X"));
   }
