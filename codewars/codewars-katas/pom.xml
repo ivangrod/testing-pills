@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ivangrod</groupId>
-  <artifactId>ten-minute-walk-kata</artifactId>
+  <artifactId>codewars-katas</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
-  <name>ten-minute-walk-kata</name>
+  <name>codewars-katas</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
