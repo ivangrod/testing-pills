@@ -28,8 +28,8 @@ public class TenMinutesWalk {
       }
     }
 
-    return countDirections.get('n') == countDirections.get('s')
-        && countDirections.get('e') == countDirections.get('w');
+    return countDirections.get('n').equals(countDirections.get('s'))
+        && countDirections.get('e').equals(countDirections.get('w'));
   }
 
   public static boolean isValidFromCodewars(char[] walk) {
